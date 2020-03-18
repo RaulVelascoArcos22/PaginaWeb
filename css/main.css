@@ -1,0 +1,268 @@
+/*INICIO: MENU DE NAVEGACION*/
+*{
+	margin:0;
+	padding:0;
+}
+header{	
+	width:100%;
+}
+header nav {
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+	background:#024959;
+}
+.menu_bar{
+	display:none;
+}
+header nav ul{
+	overflow:hidden;
+	list-style:none;
+}
+header nav ul li{
+	float:left;
+}
+header nav ul li a{
+	color:#fff;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+header nav ul li i{
+	margin-right:10px;
+}
+header nav ul li a:hover{
+	background:#037E8C;
+}
+/*
+@media screen and (max-width:800px){
+	header nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position:fixed;
+	}
+	header nav ul li {
+		display:block;
+		float:none;
+		border-bottom: 1px solid rgba(255,255,255, .3);
+	}
+	.menu_bar{
+		display:block;
+		width:100%;
+		background:#ccc;	
+	}
+	.menu_bar .bt-menu{
+		display:block;
+		padding:20px;
+		background:#024959;
+		color:#fff;
+		text-decoration:none;
+		font-weight:bold;
+		font-size:25px;	
+	}
+	.menu_bar i{
+		float:right;
+font-size:40px;		
+	}
+}*/
+/*FIN:MENU DE NAVEGACION*/
+/*INICIO DE GALERIA*/
+.galeria {
+position: relative;
+width: 90%; /* Ancho a ocupar por la galería sobre el total disponible */
+overflow: hidden;
+margin: 20px auto;
+background-color: #000;
+box-shadow: 1px 1px 6px #000;
+}
+.galeria:before {
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background-position: 50% 50%;
+background-size: 100% 100%;
+background: url(https://hotelcrownparadiseclubcancun.com/filesystem/club-cancun/bares-restaurantes-club-c/restaurantes-club-c/restaurantes-club-waynes-boots-cortes-de-carne-cancun.jpg); /* Fondo por defecto */
+-moz-background-size: cover;-webkit-background-size: cover;background-size: cover;
+}
+.imagen {
+position: relative;
+width: 15%; /* Ancho de la miniatura sobre el ancho total de la galería */
+padding-bottom: 15%; /* Idéntico al anterior para miniaturas cuadradas */
+background-position: 50% 50%;
+-moz-background-size: cover;-webkit-background-size: cover;background-size: cover;
+cursor: pointer;
+}
+.imagen:nth-of-type(1) {
+background-image: url(https://img.vixdata.io/pd/jpg-large/es/sites/default/files/de-norte-a-sur-y-de-este-a-oeste-te-presentamos-la-comida-tipica-de-23-paises-se-te-antoja_0.jpg);
+}
+.imagen:nth-of-type(2) {
+background-image: url(https://grandhotelier.com/wp-content/uploads/2019/08/La-comida-china-sus-secretos-y-beneficios.jpg);
+}
+.imagen:nth-of-type(3) {
+background-image: url(https://dam.cocinafacil.com.mx/wp-content/uploads/2019/08/comida-sin-carne.jpg);
+}
+.imagen:nth-of-type(4) {
+background-image: url(https://dam.cocinafacil.com.mx/wp-content/uploads/2019/06/recetas-hora-comida.jpg);
+}
+.imagen:before {
+content: "";
+position: absolute;
+top: -700%; /* ((Nºimágenes*2)-1)*100*/
+left: 100%;
+width: 566%; /* (10000/ancho_imagen)-100 */
+height: 400%; /* Nºimagenes*100 */
+background-image: inherit;
+-moz-background-size: cover;-webkit-background-size: cover;background-size: cover;
+-moz-transition: all .8s ;-webkit-transition: all .8s ;transition: all .8s ;
+}
+.imagen:hover:nth-of-type(1):before {
+top: 0%; /* (Nº.nth-1)*(-100) */
+}
+.imagen:hover:nth-of-type(2):before {
+top: -100%; /* (Nº.nth-1)*(-100) */
+}
+.imagen:hover:nth-of-type(3):before {
+top: -200%; /* (Nº.nth-1)*(-100) */
+}
+.imagen:hover:nth-of-type(4):before {
+top: -300%; /* (Nº.nth-1)*(-100) */
+}
+/*Fin DE GARERIA*/
+/*INICIO DE REDES SOCIALES*/
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contenedor-redes-sociales {
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedor-redes-sociales a {
+    position: relative;
+    display: inline-block;
+    height: 39px;
+    width: 160px;
+    line-height: 35px;
+    padding: 0;
+    color: #fff;
+    border-radius: 50px;
+    background: #fff;
+    margin: 5px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.contenedor-redes-sociales a:hover span.circulo {
+    left: 100%;
+    margin-left: -35px;
+    background: #fff;
+}
+
+.contenedor-redes-sociales a:hover span.titulo {
+    opacity: 0;
+}
+
+.contenedor-redes-sociales a:hover span.titulo-hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.contenedor-redes-sociales a span.titulo-hover {
+    opacity: 0;
+}
+
+.contenedor-redes-sociales a span.circulo {
+    display: block;
+    color: #fff;
+    position: absolute;
+    float: left;
+    margin: 3px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    border-radius: 50%;
+}
+
+.contenedor-redes-sociales a span.circulo i {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.contenedor-redes-sociales a span.titulo, .contenedor-redes-sociales a span.titulo-hover {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+.contenedor-redes-sociales a span.titulo {
+    right: 15px
+}
+
+.contenedor-redes-sociales a span.titulo-hover {
+    left: 15px
+}
+
+
+/*----------Colores de los botones----------*/
+
+.contenedor-redes-sociales .facebook {
+    border: 2px solid #3b5998;
+}
+
+.contenedor-redes-sociales .facebook:hover, .contenedor-redes-sociales .facebook span.circulo {
+    background: #3b5998;
+}
+
+.contenedor-redes-sociales .facebook:hover span.circulo, .contenedor-redes-sociales .facebook span.titulo {
+    color: #3b5998;
+}
+
+.contenedor-redes-sociales .twitter {
+    border: 2px solid #1da1f2;
+}
+
+.contenedor-redes-sociales .twitter:hover, .contenedor-redes-sociales .twitter span.circulo {
+    background: #1da1f2;
+}
+
+.contenedor-redes-sociales .twitter:hover span.circulo, .contenedor-redes-sociales .twitter span.titulo {
+    color: #1da1f2;
+}
+
+.contenedor-redes-sociales .gplus {
+    border: 2px solid #dd4b39;
+}
+
+.contenedor-redes-sociales .gplus:hover, .contenedor-redes-sociales .gplus span.circulo {
+    background: #dd4b39;
+}
+
+.contenedor-redes-sociales .gplus:hover span.circulo, .contenedor-redes-sociales .gplus span.titulo {
+    color: #dd4b39;
+}
+
+
+/*--------------Mediaqueries--------------*/
+
+@media screen and (max-width: 480px) {
+    .contenedor-redes-sociales a {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+/*FIN DE REDES SOCIALES*/
