@@ -266,3 +266,52 @@ a {
     }
 }
 /*FIN DE REDES SOCIALES*/
+
+
+form{
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #FFFE4C4;
+
+}
+form label{
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+}
+form input[type="text"],form input[type="email"],form input[type="number"],form input[type="date"]{
+    width: 180px;
+    padding: 3px 10px;
+    margin-top: 32px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6f6;
+    margin: 8px;
+    display: inline-block;
+}
+form input[type="submit"]{
+
+
+width: 180px;
+padding: 3px 10px;
+margin-top: 32px;
+border: 1px solid #000;
+border-radius: 5px;
+display: block;
+color: #fff;
+background-color: #000;
+text-align: center;
+}
+form input[type="submit"]:hover{
+    cursor: pointer;
+}
+label.op {
+    text-align: center;
+}
+.titulo{
+    text-align: center;
+}
+
+
